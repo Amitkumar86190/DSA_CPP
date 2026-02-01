@@ -45,33 +45,33 @@ using namespace std;
 
 // slitely optimal solution of this problem by using sort and gready approch 
 
-vector<int>two_sum(vector<int>&nums,int target){
+// vector<int>two_sum(vector<int>&nums,int target){
 
-    sort(nums.begin(),nums.end());
-    int low=0;
-    int high=nums.size()-1;
+//     sort(nums.begin(),nums.end());
+//     int low=0;
+//     int high=nums.size()-1;
 
-    while(low<high){
-        if(nums[low]+nums[high]==target){
-        cout<<low<<high;
-        return {low,high};
-        }
+//     while(low<high){
+//         if(nums[low]+nums[high]==target){
+//         cout<<low<<high;
+//         return {low,high};
+//         }
 
-        if(nums[low]+nums[high]>target) {
-            high--;
-        }
-        else {
-            low++;
-        }
+//         if(nums[low]+nums[high]>target) {
+//             high--;
+//         }
+//         else {
+//             low++;
+//         }
 
-    }
+//     }
 
-    return {-1,-1};
-}
+//     return {-1,-1};
+// }
 
-int main() {
+// int main() {
     
-vector<int>nums={2,7,11,9};
-two_sum(nums,9);
-    return 0;
-}
+// vector<int>nums={2,7,11,9};
+// two_sum(nums,9);
+//     return 0;
+// }
